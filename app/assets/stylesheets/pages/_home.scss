@@ -1,1 +1,50 @@
 // Specific CSS for your home-page
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ADBDFF;
+  color: #37323E;
+}
+
+#container{
+  background-color: white;
+  margin: 2%;
+  padding: 1%;
+}
+
+.a-propos-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.a-propos-content p {
+  width: 100%;
+}
+
+.nom-photo{
+  margin: 0 2%;
+  h3{
+    text-align: center;
+  }
+}
+
+#photo-profil {
+  width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .a-propos-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .a-propos-content p {
+    width: 50%;
+  }
+
+  .nom-photo{
+    width: 40%;
+    margin: 0 2% 2%;
+  }
+
+}
