@@ -1,14 +1,37 @@
 // Specific CSS for your home-page
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #ADBDFF;
+  background-color: #37323e9e;
   color: #37323E;
 }
 
+h2 {
+  margin-bottom: 2vh;
+}
+
+a {
+  text-decoration: none;
+  color: #37323E;
+
+}
+
+a:hover {
+  color: #37323ec0 !important;
+}
+
 #container{
-  background-color: white;
+  background-color: #FFFBFE;
   margin: 2%;
-  padding: 1%;
+  padding: 2%;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#a-propos{
+  margin-top: 6vh;
+  h2{
+    margin-bottom: 4vh;
+  }
 }
 
 .a-propos-content{
@@ -18,34 +41,45 @@ body {
 
 .a-propos-content p {
   width: 100%;
+  padding-top: 20px;
 }
 
 .nom-photo{
   margin: 0 2%;
-  h3{
+  h4{
     text-align: center;
   }
 }
 
 #photo-profil {
   width: 100%;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 900px) {
   .a-propos-content{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: flex-start;
   }
   .a-propos-content p {
-    width: 50%;
-    padding-top: 3%;
+    margin: 0;
   }
 
   .nom-photo{
-    width: 40%;
     margin: 0 2% 2%;
   }
 
+  #photo-profil {
+
+  }
+}
+
+#rdv{
+  margin-top: 6vh;
+}
+
+#contact{
+  margin-top: 6vh;
 }
