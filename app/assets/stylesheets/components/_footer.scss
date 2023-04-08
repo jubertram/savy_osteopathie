@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  padding: 0px 50px;
+  padding: 0px;
   color: rgba(0,0,0,0.3);
 }
 .footer-links {
@@ -23,4 +23,20 @@
 }
 .footer .fa-heart {
   color: #648381;
+}
+
+.footer-copyright {
+  margin-left: 11%;
+  margin-right: 1%;
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .footer {
+    padding: 0px 50px;
+  }
+  .footer-copyright {
+    margin-left: 0;
+    text-align: center;
+  }
 }
