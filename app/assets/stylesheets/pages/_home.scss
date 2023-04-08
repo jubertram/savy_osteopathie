@@ -1,7 +1,7 @@
 // Specific CSS for your home-page
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #37323e9e;
+  background-color: #37323e6e;
   color: #37323E;
 }
 
@@ -17,6 +17,10 @@ a {
 
 a:hover {
   color: #37323ec0 !important;
+}
+
+.nav-brand {
+  padding-bottom: 0 !important;
 }
 
 #container{
@@ -37,17 +41,21 @@ a:hover {
 .a-propos-content{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .a-propos-content p {
   width: 100%;
   padding-top: 20px;
+  margin-bottom: 0px;
 }
 
 .nom-photo{
   margin: 0 2%;
+  width: 80%;
   h4{
     text-align: center;
+    padding-top: 10px;
   }
 }
 
@@ -56,23 +64,27 @@ a:hover {
   border-radius: 5px;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   .a-propos-content{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     // justify-content: space-between;
     align-items: flex-start;
   }
   .a-propos-content p {
-    margin: 0;
+    margin: 0 6% 0 0;
+    padding-top: 0;
   }
 
   .nom-photo{
-    margin: 0 2% 2%;
+    position: absolute;
+    top: 15vh;
+    left: 7vw;
+    width: 11vw;
   }
-
-  #photo-profil {
-
+  #container{
+    padding: 2% 4% 2% 25%;
+    border-radius: 8px;
   }
 }
 
